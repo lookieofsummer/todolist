@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ToDoList</title>
+        <style>
+            .done {
+                color: gray;
+                text-decoration: line-through;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                font-size: 16px;
+                text-align: center;
+            }
+            .header {
+                height: 50px;
+                background: #0e7bef;
+            }
+            .todo-form{
+                width: 600px;
+                padding: 0 10px;
+                margin: 0 auto;
+            }
+
+            .btn {
+                height: 24px;
+                margin-top: 12px;
+                background-color:white ;
+                border-radius: 5px;
+                border: 2px white solid;
+                color: #0e7bef;
+            }
+            #id-input-todo {
+                width: 60%;
+                height: 24px;
+                margin-top: 12px;
+                text-indent: 10px;
+                border-radius: 5px;
+                box-shadow: 0 1px 0 rgba(255,255,255,0.24), 0 1px 6px rgba(0,0,0,0.45) inset;
+                border: none;
+            }
+            #id-div-container{
+                margin-top: 24px;
+            }
+            .todo-cell{
+                margin: 4px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="todo-main">
+            <div class="header">
+                <div class="todo-form">
+                    <input id='id-input-todo' type="text">
+                    <button id='id-button-add' class='btn' type="button">TODO</button>
+                </div>
+            </div>
+            <div id="id-div-container">
+            </div>
+        </div>
+        <script src='todo.js'></script>
+    </body>
+</html>
